@@ -31,7 +31,7 @@
 
 \rule{\linewidth}{0.5mm} \\[2cm]
 
-\textsc{\Huge Title}\\[10cm]
+\textsc{\Large Charactarezation of ScCr sample}\\[10cm]
 
 \normalsize Mattias Jansson - matja307@student.liu.se\\[0.5 mm]
 Simon Larsson - simla804@student.liu.se\\[0.5 mm]
@@ -54,9 +54,60 @@ Linkšping\\[0.5 mm]
 \section{Experimental Details}
 \emph{What did I do? (Must include sufficient detail so that the results can be duplicated.}
 
+The sample was examined using X-ray diffractometry (XRD). The measurements were done using a copper filament X-ray source. The method used was low angle x-ray reflecivity. The angle $\theta$ is defined as shown in figure \ref{fig:xrd3}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{xrd_plot3.png}
+\caption{Defenition of angle $\theta$ for XRD measurements
+\label{fig:xrd3}}
+\end{center}
+\end{figure} 
+
+
 \section{Results}
 \emph{What did I get? What did I observe?}
 
+Figure \ref{fig:xrd1} shows the XRD spectrum from the low angle x-ray reflexivity measurements. The figure clearly shows two peaks at $2\theta = 5$ and $2\theta = 10$ respectively. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{xrd_plot1.png}
+\caption{Low angle XRD measurement. 
+\label{fig:xrd1}}
+\end{center}
+\end{figure}
+
+The peaks correspond to two solutions to Bragg's law for thin layers:
+
+\begin{equation}
+\label{eqn:bragg}
+m\lambda = 2D\sin\theta\sqrt{1+\frac{\eta^2-1}{\sin^2\theta}}
+\end{equation}
+
+Figure \ref{fig:xrd2} shows a measurement of the lower $\theta$ part of the spectrum. This shows that there are no bragg peaks in this part of the spectrum. Hence the $\theta = 5$ peak is the $m = 1$ peak. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{xrd_plot2.png}
+\caption{Low $\theta$ part of spectrum for low angle XRD measurement. 
+\label{fig:xrd2}}
+\end{center}
+\end{figure}
+
+To find the layer period thickness, $D$, (\ref{eqn:bragg}) is rewritten as: 
+
+\begin{equation}
+m^2 = \frac{4D^2}{\lambda^2}\sin^2\theta + C
+\end{equation}
+
+
+Where C is a constant w.r.t. $\theta$. Using the two peaks for m = 1 and 2 respectively, we get figure XXX3, giving:
+
+\[\frac{4D^2}{\lambda^2} \approx 532.07 \]
+
+or
+\[ D \approx 17.8 \AA. \]
 \section{Discussion}
 \emph{So what? Interpret the results.}
 
